@@ -86,7 +86,10 @@ int	ft_controls(int keycode, t_data *s)
 
 	works = 0;
 	if (keycode == 65307)
+	{
+		free_ptr(s);
 		free_exit(s);
+	}
 	if (keycode == 119)
 		works = keyboard_w(s);
 	if (keycode == 115)
